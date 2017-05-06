@@ -1,0 +1,80 @@
+// -------------------------------------------
+// Constants
+// -------------------------------------------
+$primaryColor: #64b255;
+$operatorColor: #83c178;
+
+$maxWidth: 1200px;
+$tabletWidth: 960px;
+$mobileWidth: 600px;
+
+// -------------------------------------------
+// Class Rules
+// -------------------------------------------
+.calculator {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  height: 400px;
+}
+
+.inner-btns {
+  background-color: $primaryColor;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.btn {
+  border: 1px solid white;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  padding: 20px;
+  flex:1;
+  flex-basis:15%;
+}
+
+.output-row {
+  background-color: $primaryColor;
+  display: flex;
+}
+
+.result-box {
+  flex:22;
+}
+
+.operator {
+  background-color: $operatorColor;
+}
+
+.clear:hover {
+  background-color: $operatorColor;
+}
+
+//---------------------------------------
+//  Tablet Rules
+//----------------------------------------
+@media only screen and (max-width: $tabletWidth) {
+  .calculator {
+    width: 60%;
+    height:200px;
+  }
+  .btn {
+    flex-basis: 13%;
+  }
+}
+
+//----------------------------------------
+//  Mobile Rules
+//----------------------------------------
+
+@media only screen and (max-width: $mobileWidth) {
+  .calculator {
+    width: 90%;
+    height:100px;
+  }
+  .btn {
+    flex-basis: 12%;
+  }
+}
