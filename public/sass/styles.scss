@@ -19,10 +19,13 @@ $mobileWidth: 600px;
 }
 
 .inner-btns {
-  background-color: $primaryColor;
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
+}
+
+.num, .decimal, .equals {
+  background-color: $primaryColor;
 }
 
 .btn {
@@ -32,7 +35,7 @@ $mobileWidth: 600px;
   font-size: 40px;
   padding: 20px;
   flex:1;
-  flex-basis:15%;
+  flex-basis:25%;
 }
 
 .output-row {
@@ -41,13 +44,16 @@ $mobileWidth: 600px;
 }
 
 .result-box {
-  flex:22;
+  flex:64;
 }
 
 .operator {
   background-color: $operatorColor;
 }
 
+.clear {
+  background-color: $primaryColor
+}
 .clear:hover {
   background-color: $operatorColor;
 }
@@ -61,7 +67,7 @@ $mobileWidth: 600px;
     height:200px;
   }
   .btn {
-    flex-basis: 13%;
+    flex-basis: 25%;
   }
 }
 
@@ -75,6 +81,6 @@ $mobileWidth: 600px;
     height:100px;
   }
   .btn {
-    flex-basis: 12%;
+    flex-basis: 25%;
   }
 }
