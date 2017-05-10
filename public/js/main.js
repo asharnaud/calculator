@@ -3,7 +3,6 @@ let $ = window.jQuery
 $(document).ready(function () {
 // This checks to make sure the number isn't too long to fit in the sum box.
   let checkNumLength = (number) => {
-    console.log(number)
     if (number.length > 9) {
       sum.text(number.substr(number.length - 9, 9))
       if (number.length > 15) {
@@ -44,7 +43,7 @@ $(document).ready(function () {
   })
 
 // When the decimal is clicked it appends a decimal to the number.
-  $('#decimal').click(function () {
+  $('#decimal').click(() => {
     number = number + '.'
     sum.text(number)
     checkNumLength(number)
@@ -53,7 +52,7 @@ $(document).ready(function () {
 // When the equals is clicked it checks the operator being done then converts 'number' and 'newnum' from a string to an integer and does the operation. Then converts the answer back to a string to be able to put it inside the sum box.
   $('#equals').click(() => {
     if (operator === '+') {
-      number = (parseFloat(number)) + parseFloat(newnum).toString(10)
+      number = +(parseFloat(number)) + +(parseFloat(newnum)).toString(10)
     } else if (operator === '-') {
       number = (parseFloat(newnum)) - parseFloat(number).toString(10)
     } else if (operator === '/') {
