@@ -4,6 +4,6 @@
 
 ![alt text](https://tiy-learn-content.s3.amazonaws.com/ff14991c-calculator.png "calculator")
 
-This was a great project to work on state management. It was challenging but fun once I finally got it right! :+1:
+This was a great project to work on state management. It was challenging but fun once I finally got it! :+1:
 
 [My Calculator](https://asharnaud.github.io/calculator/public/)
