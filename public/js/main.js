@@ -39,6 +39,8 @@ function calculateSum () {
   return total
 }
 
+disableOperator()
+
 $('#calc .num').click((e) => {
   number += e.target.innerHTML
   sum.html(number)
@@ -69,7 +71,7 @@ $('#decimal').click(() => {
 
 $('#clearall').click(() => {
   clearSum()
-  enableOperator()
+  disableOperator()
 })
 
 function disableOperator () {
