@@ -44,7 +44,7 @@ $mobileWidth: 600px;
 }
 
 .result-box {
-  flex:64;
+  flex:3;
 }
 
 .operator {
@@ -52,7 +52,8 @@ $mobileWidth: 600px;
 }
 
 .clear {
-  background-color: $primaryColor
+  background-color: $primaryColor;
+  flex:0.8;
 }
 .clear:hover {
   background-color: $operatorColor;
